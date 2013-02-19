@@ -1,0 +1,14 @@
+web1:
+  name: silex
+  shared_writable_dirs:
+    - /storage/uploads
+  document_root: web
+  php_version: 5.3.10
+  php_extensions:
+    - curl
+    - http
+    - zip
+  after_build:
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
+  after_deploy:
+    - "rm -f storage/cache/*"

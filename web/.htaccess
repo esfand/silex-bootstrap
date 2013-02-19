@@ -2,7 +2,7 @@
     Options -MultiViews
 
     RewriteEngine On
-    #RewriteBase /smeppl
+    #RewriteBase /silex-bootstrap
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
