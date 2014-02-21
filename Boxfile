@@ -3,7 +3,7 @@ web1:
   shared_writable_dirs:
     - /storage/uploads
   document_root: web
-  php_version: 5.3.10
+  php_version: 5.4.14
   php_extensions:
     - curl
     - http
